@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+@font-face {
+    font-family: ka;
+    src: url(../font/Karla-Regular.ttf);
+}
+@font-face {
+    font-family: mt;
+    src: url(../font/Montserrat-Regular.ttf);
+}
