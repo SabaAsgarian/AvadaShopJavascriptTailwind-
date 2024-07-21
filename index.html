@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/javascript.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<style>
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <main class="mx-auto w-full overflow-hidden  ">
+        <div class="row flex justify-center items-center ">
+            <div class="hidden lg:flex lg:w-full lg:h-[10%]   pt-2 ">
+                <div class="row flex ">
+                    <div class="h-full w-[25%] flex justify-end *:text-[#494949]">
+                        <ul class="row *:cursor-pointer justify-end items-center *:mx-[1%] *:text-[16px]">
+                            <li> <i class="icon-facebook-3"></i> </li>
+                            <li> <i class=" icon-x-twitter"></i> </li>
+                            <li> <i class=" icon-instagram-1"></i> </li>
+                            <li> <i class="icon-youtube"></i> </li>
+                            <li> <i class=" icon-pinterest"></i> </li>
+                        </ul>
+                    </div>
+                    <div class="h-full w-[50%] flex justify-center items-center *:text-[#427ed1]">
+                        <h2 id="txt" class="font-mt font-extrabold"></h2>
+                    </div>
+                    <div class="h-full w-[25%]">
+                        <div class="row ">
+                            <i class=" icon-search text-[16px] text-[#AAAAAA] flex justify-center items-center"></i>
+                            <input type="text" placeholder="Search For Products...."
+                                class="border-none text-[11px] text-black">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="w-full h-[20%] py-[20px]  flex justify-center items-center border-t-2 border-t-[#dbd8d8]  ">
+                <div class="nav-container w-[33.33%] h-full lg:hidden ml-[8%] lg:ml-0 menuuu">
+                    <div class="ham">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="menu" class="w-[300px] lg:w-[1000px] xl:w-[1200px] menu  *:cursor-pointer ">
+                        <li class="hover:text-[#427de1]  text-black">Home</li>
+                        <li class="hover:text-[#427de1]  text-black">Products</li>
+                        <li class="hover:text-[#427de1]  text-black">Collection </li>
+                        <li class="hover:text-[#427de1]  text-black">Best Seller</li>
+                        <li class="hover:text-[#427de1]  text-black"> New Arrivals</li>
+                        <li class="hover:text-[#427de1]  text-black">Contact</li>
+                    </ul>
+                </div>
+                <div class="row menuu">
+                    <figure
+                        class="w-[33.33%] ml-[15%] lg:ml-0 flex  justify-center lg:h-full lg:w-[25%] lg:justify-end">
+                        <img class="w-[100%] lg:w-[40%]" src="img/avada-classic-shop-logo.svg" alt="">
+                    </figure>
+
+                    <ul
+                        class="ul hidden lg:flex  lg:w-[40%] *:w-full *:h-full justify-center items-center *:cursor-pointer *:font-ka *:text-[12px]   menuu *:rounded-md">
+                        <li class="ml-2 flex justify-center items-center py-[1%] px-[1%] hover:text-[#427de1]">Home</li>
+                        <li class="flex justify-center items-center py-[1%] px-[1%] hover:text-[#427de1]">
+                            Products
+                        </li>
+                        <li class="flex justify-center items-center py-[1%] px-[1%] hover:text-[#427de1]"> Collection
+                        </li>
+                        <li class="flex justify-center items-center py-[1%] px-[5%] hover:text-[#427de1]">
+                            Best Seller
+                        </li>
+                        <li class="flex justify-center items-center py-[1%] px-[5%] hover:text-[#427de1]">
+                            New Arrivals
+                        </li>
+                        <li class="flex justify-center items-center py-[1%] px-[1%] hover:text-[#427de1]">Contact</li>
+
+
+
+
+
+
+
+
+                    </ul>
+                    <div class="hidden lg:flex h-full w-[15%]  justify-center ">
+                        <button class="py-[10px] px-[14px] bg-[#427ed1] rounded-full text-white">
+                            SHOP NOW!
+                        </button>
+                    </div>
+                    <ul
+                        class="w-[33.33%] pl-[20%] lg:pl-0 h-full lg:w-[20%] flex justify-items-start  *:text-black *:text-[22px]  ">
+                        <ol class="flex list-none cursor-pointer"> <i class=" icon-user-outline"></i> </ol>
+                        <ol class="flex list-none cursor-pointer"> <i class="icon-shopping-basket"></i> </ol>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Slider main container -->
+            <section class="swiper mySwiper " id="section-1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/home1_slide_one_bg.jpg" alt="">
+                            <figcaption class="row">
+                                <h1 class="font-mt text-[40px] md:text-[80px]">Avada Classic Shop</h1>
+                                <h3 class="font-mt text-[20px] md:text-[24px]">SHOW YOUR PRODUCTS WITH STYLE</h3>
+                                <div class="row *:rounded-full *:font-ka *:text-[12px]">
+                                    <button> GET AVADA NOW!</button>
+
+
+
+
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/home1_slide_2_bg.jpg" alt="">
+                            <figcaption class="row">
+                                <h1 class="font-mt text-[40px] md:text-[80px]">Online Store</h1>
+                                <h3 class="font-mt text-[20px] md:text-[24px]">SELL YOUR PRODUCTS WITH STYLE</h3>
+                                <div class="row *:rounded-full *:font-ka *:text-[12px]">
+                                    <button> MEN</button>
+                                    <button>WOMEN</button>
+
+
+
+
+
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/home1_slide_three_bg_2.jpg" alt="">
+                            <figcaption class="row">
+                                <h1 class="font-mt text-[40px] md:text-[80px]">Brand New Arrivals</h1>
+                                <h3 class="font-mt text-[20px] md:text-[24px]">NEW COLLECTION FROM NEW YORK</h3>
+                                <div class="row *:rounded-full *:font-ka *:text-[12px]">
+                                    <button> VIEW ALL</button>
+                                    <button>LOOKBOOK</button>
+
+
+
+
+
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </section>
+            <!-- second page -->
+            <section class="w-full h-[120vh] py-[10%] *:text-center" id="section-2" >
+                <div class="row">
+                    <div class="w-full h-[20%]">
+                        <h2
+                            class="w-full flex justify-center items-center font-mt text-[20px] lg:text-[40px] text-center font-extrabold">
+                            Featured Products
+                        </h2>
+                        <h4
+                            class="w-full flex justify-center items-center font-ka  text-[15px] lg:text-[20px] text-center">
+                            Must have products from our top sellers</h4>
+                    </div>
+                    <div class="w-full h-[80%] flex justify-center items-center pt-[5%]">
+                        <div class="tabs w-[60%]">
+                            <ul class="ro flex justify-center items-center">
+                                <li class="w-[80%] lg:w-[20%] h-[65px] font-mt font-extrabold text-[15px]">Men</li>
+                                <li class="w-[80%] lg:w-[20%] h-[65px] font-mt font-extrabold text-[15px]">Women</li>
+                                <li class="w-[80%] lg:w-[20%] h-[65px] font-mt font-extrabold text-[15px]">Accessories
+                                </li>
+                            </ul>
+                            <div class="ro txt w-full h-auto">
+                                <div>
+                                    <figure class="row w-full h-full">
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full lg:border-none">
+                                            <img src="img/black_elegant_leather_jacket.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Black Leather Jacket</h3>
+                                                <p class="font-ka text-gray-500 font-light">Men, Jackets, Jeans</p>
+                                                <span class="text-[#427ed1]">$235</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/black_leather_suit.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Black Leather Suit</h3>
+                                                <p class="font-ka text-gray-500 font-light">Jackets, Men</p>
+                                                <span class="text-[#427ed1]">$176</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/blue_jacket_and_white_stripe_tee.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Blue Jacket & Stripe Tee</h3>
+                                                <p class="font-ka text-gray-500 font-light">Jackets, Men, Suits</p>
+                                                <span class="text-[#427ed1]">$580</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/modern_black_leather_suit.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Modern Black Leather Suit</h3>
+                                                <p class="font-ka text-gray-500 font-light">Jackets, Men</p>
+                                                <span class="text-[#427ed1]">$105</span>
+                                            </figcaption>
+                                        </div>
+
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure class="row w-full h-full">
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/spring_printed_dress.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Spring Printed Dress</h3>
+                                                <p class="font-ka text-gray-500 font-light">Dress, Women</p>
+                                                <span class="text-[#427ed1]">$47</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/modern_love_tee.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Modern Love Tee</h3>
+                                                <p class="font-ka text-gray-500 font-light">T-Shirts, Women</p>
+                                                <span class="text-[#427ed1]">$68</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/black_leather_jacket.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Black Jacket</h3>
+                                                <p class="font-ka text-gray-500 font-light">Jackets, Women</p>
+                                                <span class="text-[#427ed1]">$125</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/hipster_black_top.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Hipster Black Top</h3>
+                                                <p class="font-ka text-gray-500 font-light">T-Shirts, Women</p>
+                                                <span class="text-[#427ed1]">$57</span>
+                                            </figcaption>
+                                        </div>
+
+
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure class="row w-full h-full">
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/casual_leather_belts.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Casual Leather Belts</h3>
+                                                <p class="font-ka text-gray-500 font-light">Accessories, Men</p>
+                                                <span class="text-[#427ed1]">$65</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img src="img/leather_gloves.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Leather Gloves</h3>
+                                                <p class="font-ka text-gray-500 font-light">Accessories, Gloves, Men, Women</p>
+                                                <span class="text-[#427ed1]">$45</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img  src="img/modern_leather_boots.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Modern Leather Boots</h3>
+                                                <p class="font-ka text-gray-500 font-light">Accessories, Men, Miscellaneous, Shoes</p>
+                                                <span class="text-[#427ed1]">$50</span>
+                                            </figcaption>
+                                        </div>
+                                        <div class="w-1/4 h-full lg:w-[25%]    lg:h-full">
+                                            <img class="" src="img/brown_dress_shoes.jpg" alt="">
+                                            <figcaption>
+                                                <h3 class="font-mt font-extrabold">Brown Dress Shoes</h3>
+                                                <p class="font-ka text-gray-500 font-light">Accessories, Miscellaneous, Shoes, Women</p>
+                                                <span class="text-[#427ed1]">$46.36</span>
+                                            </figcaption>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- second page -->
+            <!-- third page -->
+            <section class="w-full h-fit py-[100px]" id="section-3">
+                <div class="row h-full flex justify-center items-center">
+                    <figure data-scrl="left"
+                        class="duration-[1s]  box left w-full h-full lg:w-[33.33%] lg:h-full relative *:text-center *:text-white">
+                        <img src="img/winter_collection_bg.jpg" alt="">
+                        <figcaption class="absolute bottom-[20%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                            <h2 class="text-[20px] lg:text-[40px] font-mt font-extrabold w-full">Winter Collection</h2>
+                            <p class="text-[18px] lg:text-[20px] font-ka">STYLISH AND WARM</p>
+                            <div class="row flex justify-center items-center">
+                                <button
+                                    class="border-2 border-white rounded-full px-[6%] py-[2%] hover:bg-[#ffffff3e] bg-transparent text-[15px]">VIEW
+                                    MORE</button>
+
+
+
+
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure data-scrl="op"
+                        class="duration-[1s] box op w-full h-full lg:w-[33.33%] lg:h-full relative *:text-center *:text-white">
+                        <img src="img/spring_collection_bg.jpg" alt="">
+                        <figcaption class="absolute bottom-[20%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                            <h2 class="text-[20px] lg:text-[40px] font-mt font-extrabold w-full"> Spring Collection</h2>
+                            <p class="text-[18px] lg:text-[20px] font-ka">BRIGHT AND COLORFUL</p>
+                            <div class="row flex justify-center items-center">
+                                <button
+                                    class="border-2 border-white rounded-full px-[6%] py-[2%] hover:bg-[#ffffff3e] bg-transparent text-[15px]">VIEW
+                                    MORE</button>
+                            </div>
+
+
+                        </figcaption>
+                    </figure>
+                    <figure data-scrl="right"
+                        class="duration-[1s]  box right w-full h-full lg:w-[33.33%] lg:h-full relative *:text-center *:text-white">
+                        <img src="img/autumn_collection_bg.jpg" alt="">
+                        <figcaption class="absolute bottom-[20%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                            <h2 class="text-[20px] lg:text-[40px] font-mt font-extrabold w-full"> Autumn Collection</h2>
+                            <p class="text-[18px] lg:text-[20px] font-ka">RICH AND COMFORTABLE</p>
+
+
+                            <div class="row flex justify-center items-center">
+                                <button
+                                    class="border-2 border-white rounded-full px-[6%] py-[2%] hover:bg-[#ffffff3e] bg-transparent text-[15px]">VIEW
+                                    MORE</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- third page -->
+            <!-- fourth page -->
+            <section class="w-full h-[120vh]  fourthpage " id="section-4">
+                <div class="row">
+                    <div class="w-full h-[20%]">
+                        <h2
+                            class="w-full flex justify-center items-center font-mt text-[20px] lg:text-[40px] text-center font-extrabold">
+                            Best Sellers
+                        </h2>
+                        <h4
+                            class="w-full flex justify-center items-center font-ka  text-[15px] lg:text-[20px] text-center">
+                            Must have products from our top sellers</h4>
+                    </div>
+                    <div class="w-full h-[80%] fourth5 *:text-center mous">
+                        <div class="swiper mySwiper2 swiper-1 2xl:swiper-1-1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black ">
+                                        <img src="img/black_leather_jacket.jpg" alt="">
+                                        <figcaption class="!text-black absolute !top-[500px] !left-[110px] row">
+                                            <h2 class="!text-black !text-[20px]  font-mt"></h2>
+                                            <p class="!text-black !text-[18px]  font-ka"></p>
+                                            <span class="!text-black !text-[12px]"></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/black_elegant_leather_jacket.jpg" alt="">
+                                        <figcaption class="!text-black absolute !top-[500px] !left-[110px] row">
+                                            <h2 lass="!text-black !text-[20px]  font-mt"></h2>
+                                            <p class="!text-black !text-[18px]  font-ka"></p>
+                                            <span class="!text-black !text-[12px]"></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/hipster_black_top.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/blue_jacket_and_white_stripe_tee.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/wool_summer_bright_red.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/brown_dress_shoes.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/black_leather_jacket.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/black_elegant_leather_jacket.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/hipster_black_top.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/blue_jacket_and_white_stripe_tee.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/wool_summer_bright_red.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full relative *:text-center *:text-black">
+                                        <img src="img/brown_dress_shoes.jpg" alt="">
+                                        <figcaption>
+                                            <h2 class="text-[20px] lg:text-[40px] font-mt"></h2>
+                                            <p class="text-[18px] lg:text-[20px] font-ka"></p>
+                                            <span></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- <div class="c1"></div>
+                        <div class="c2"></div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- fourth page -->
+            <!-- fifth page -->
+            <section class="w-full h-fit bg-scrl bg-repeat fifth py-[8%] *:text-white ">
+                <div class="row h-full justify-center items-center">
+                    <figure data-scrl="left" class="p-4 lg:pl-4 w-full h-1/2 lg:w-[50%] lg:h-full relative box left  py-[5%]">
+                        <img class="w-full h-full " src="img/promo_box_1_bg.jpg" alt="">
+                        <figcaption class="absolute bottom-[10%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                            <h3 class="font-mt text-[18px] xl:text-[35px] font-extrabold">70% Off</h3>
+                            <p class="font-ka text-[15px] xl:text-[25px] font-extrabold">Vivamus tempor leo lacus,
+                                feugiat
+                                ut magna aliquam erat.</p>
+
+                            <div class="row flex justify-start items-center">
+                                <button
+                                    class="border-2 border-white rounded-full px-[6%] py-[2%] hover:bg-[#ffffff3e] bg-transparent text-[11px] lg:text-[15px]">VIEW
+                                    MORE</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure data-scrl="right" class="p-4 lg:pl-4 w-full h-1/2 lg:w-[50%] lg:h-full relative box right py-[5%]">
+                        <img class="w-full h-full " src="img/promo_box_2_bg.jpg" alt="">
+                        <figcaption
+                            class="absolute bottom-[10%]  left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                            <h3 class="font-mt text-[18px] xl:text-[35px] font-extrabold">Free Shipping</h3>
+                            <p class="font-ka text-[15px] xl:text-[25px] font-extrabold">Vivamus tempor leo lacus,
+                                feugiat
+                                ut magna aliquam erat.</p>
+                            <div class="row flex justify-start items-center">
+                                <button
+                                    class="border-2 border-white rounded-full px-[6%] py-[2%] hover:bg-[#ffffff3e] bg-transparent text-[11px]  lg:text-[15px]">VIEW
+                                    MORE</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- fifth page -->
+            <!-- sixth -->
+            <section class="w-full h-[180vh]  xl:h-[150vh] py-[250px] xl:py-0" id="section-5">
+                <div class="row">
+                    <div class="w-full h-[20%] pt-[150px] xl:py-[10%]">
+                        <h2
+                            class="w-full flex justify-center items-center font-mt text-[20px] lg:text-[40px] text-center font-extrabold">
+
+                            New Arrivals</h2>
+                        <h4
+                            class="w-full flex justify-center items-center font-ka  text-[15px] lg:text-[20px] text-center">
+                            Brand new products from top designers</h4>
+                    </div>
+                    <div class="w-full h-[80%]  mous">
+                        <div class="swiper mySwiper2 swiper-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/black_leather_jacket.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/black_elegant_leather_jacket.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full *:text-center *:text-black">
+                                        <img src="img/hipster_black_top.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full *:text-center *:text-black">
+                                        <img src="img/blue_jacket_and_white_stripe_tee.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/wool_summer_bright_red.jpg" alt="">
+
+                                    </figure>
+                                </div>
+
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/black_leather_jacket.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/blue_leather_jacket.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/black_rebel_leather_jacket.png" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/modern_black_leather_suit.jpg" alt="">
+
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide lg:w-[70%] lg:h-[70%] ">
+                                    <figure class="w-full h-full  *:text-center *:text-black">
+                                        <img src="img/blue_stripe_sweater.jpg" alt="">
+
+                                    </figure>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- sixth -->
+            <!-- last -->
+            <section class="w-full h-[400px] bg-[#f6f6f6] *:text-[#4e4f4e] *:font-mt ">
+
+                <div class="row justify-center items-center ">
+                    <div class="w-full h-[50%] py-[50px] xl:pt-0">
+
+                        <h4
+                            class="w-full flex justify-center items-center font-ka  text-[15px] lg:text-[20px] text-center">
+                            BRAND LOGOS</h4>
+                    </div>
+                    <div class="w-full h-[50%] "> <!-- Swiper -->
+                        <div class="swiper mySwiper3 swiper-3" id="swiper-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/b_logotype_1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_6.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_7.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_6.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/b_logotype_7.png" alt=""></div>
+                            </div>
+
+                        </div>
+
+                        <!-- Swiper JS -->
+                    </div>
+                
+            </section>
+            <!-- last -->
+
+        </div>
+        <section class="w-full h-auto  " id="section-6">
+            <div class="row">
+                <div class="w-full h-[40%] bg-[#2e3238] py-[10%]">
+                    <div class="row flex justify-center items-center *:text-center">
+                        <div class="w-full lg:w-[10%]">
+                        <i
+                            class="icon-mail-2 py-[8px] px-[8px] rounded-full bg-[#595f69] text-[#2b2e32] text-[26px]"></i></div>
+                        <h1 class="w-full lg:w-[30%] pr-4 text-[26px] font-mt font-extrabold text-white">
+                            Subscribe now and get special offers
+                        </h1>
+                        <input type="text" placeholder="Insert Your Email"
+                            class="w-full lg:w-[20%] lg:py-[1%] lg:px-[5%] rounded-full">
+
+                        <button class="w-full lg:w-[20%] bg-[#427ed1] py-[3%] lg:py-[1%] lg:px-[5%] rounded-full">SEND</button>
+
+                    </div>
+                </div>
+                <footer class="w-full h-[60%] bg-[#2b2e32] flex justify-center items-center py-[10%]">
+
+                    <div class="flex flex-wrap w-[90%] h-[90%] ">
+
+                        <div class="w-full h-[33.33%] lg:w-[33.33%] lg:h-full *:text-center *:lg:text-start  py-[2%]">
+                            <h2 class="font-extrabold font-mt text-slate-50 text-[18px]">Address</h2>
+                            <p class="text-slate-50 text-[15px]">12345 North Main Street,
+                                New York, NY 555555
+                                Phone: 1.800.555.6789
+                                Email: computer.sabaa@gmail.com
+                                Web: Theme-fusion.com</p>
+                        </div>
+                        <div class="w-full h-[33.33%] lg:w-[33.33%] lg:h-full  ">
+                            <figure class="w-full flex justify-center items-center pt-[3%] ">
+                                <img class="w-[70%]" src="img/classic_shop_logo_footer.png" alt="">
+                            </figure>
+                            <div class="w-full flex flex-wrap justify-center items-center py-[70px] *:text-center">
+                                <p class=" w-[60%] h-full font-os text-[14px] text-[#99A6B1]">Created By Saba Asgarian
+                                    contact me via <a class="hover:text-white text-[#46b1fd]"
+                                        href="mailto:computer.sabaa@gmail.com">computer.sabaa@gmail.com</a></p>
+                            </div>
+                            <ul
+                                class=" ps-[20px] flex flex-wrap  *:text-white text-[15px] lg:text-[18px] *:text-[15px] *:lg:text-[20px]   justify-center items-center *:mx-[8px] pb-[50px] *:text-center">
+                                <li><a class="hover:text-[#427ed1] flex justify-center items-center "
+                                        href="https://github.com/SabaAsgarian" target="_blank"><i
+                                            class="icon-github-circled-1"></i></a></li>
+                                <li><a class="hover:text-[#427ed1] flex justify-center items-center "
+                                        href="https://www.linkedin.com/in/saba-asgarian-69161088?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                        target="_blank"><i class=" icon-linkedin-1"></i></a></li>
+                                <li><a class="hover:text-[#427ed1] flex justify-center items-center "
+                                        href="https://www.instagram.com/saba_asgarian_web?igsh=M2Z2dTU3cHFmeW1o&utm_source=qr"
+                                        target="_blank"><i class="icon-instagram-2"></i></a></li>
+                                <li> <a class="hover:text-[#427ed1] flex justify-center items-center "
+                                        href="mailto:computer.sabaa@gmail.com"><i class="icon-mail"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="w-full h-[33.33%] lg:w-[33.33%] lg:h-full  *:text-center">
+                            <div class="row *:pb-[40px]">
+                                <h2 class="font-extrabold font-pp text-slate-50 text-[18px] w-full"></h2>
+                                <figure class="w-full">
+                                    <a class="flex w-full overflow-hidden" href="">
+                                        <img class="w-full hover:scale-110 duration-[1s]"
+                                            src="img/post_img_11-700x441.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="w-full">
+                                    <a class="flex w-full overflow-hidden" href="">
+                                        <img class="w-full hover:scale-110 duration-[1s]" src="img/post_img_10.jpg"
+                                            alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+        </section>
+        <!-- my signature -->
+        <figure
+            class=" group w-[130px] h-[130px] flex flex-wrap fixed z-10 left-[10px] bottom-[40px] rounded-full cursor-pointer ">
+            <img class="bg-[#ffc0cb] relative z-10 w-full h-full object-cover rounded-full" src="img/me.png" alt="">
+            <div
+                class="group-hover:right-[-41px] group-hover:opacity-100 group-hover:visible w-[40px] h-[90px] absolute top-0 right-[70px] opacity-0 invisible duration-[.4s] ease-linear hover:right-[-45px] hover:opacity-100 hover:visible">
+                <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#ffc0cb] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black"
+                    href="https://github.com/SabaAsgarian" target="_blank"><i class="icon-github-circled-1"></i></a>
+                <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#ffc0cb] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black"
+                    href="https://www.linkedin.com/in/saba-asgarian-69161088?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank"><i class=" icon-linkedin-1"></i></a>
+                <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#ffc0cb] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black"
+                    href="https://www.instagram.com/saba_asgarian_web?igsh=M2Z2dTU3cHFmeW1o&utm_source=qr"
+                    target="_blank"><i class="icon-instagram-2"></i></a>
+                <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#ffc0cb] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black"
+                    href="mailto:computer.sabaa@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+
+            </div>
+        </figure>
+        <!-- my signature -->
+        <span class="relative " id="span">
+            <div class="hover:bg-[#427de1] fixed right-[2%] bottom-[5%] bg-[#333333cc] flex h-[50px] w-[40px] justify-center items-center text-white text-[18px] "><i class="icon-up-open"></i></div>
+        </span>
+    </main>
+    <footer class="bg-[#2b2e32] h-[100px] w-full"></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper1 = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    //writing text
+    const h1 = document.getElementById('txt')
+    const arr = [
+        '15% OFF YOUR FIRST ORDER!  ',
+        'FREE STANDARD SHIPPING ON ORDERS OVER $49   ',
+
+    ]
+    let flag = 0
+    let num = 0
+    let cloneNum = 0
+    writeText()
+    function writeText() {
+        setInterval(() => {
+            if (flag < arr.length) {
+                if (num < arr[flag].length) {
+                    num++
+                    cloneNum = num
+                    h1.innerText = arr[flag].slice(0, num)
+                } else {
+                    if (cloneNum > 0) {
+                        cloneNum--
+                        h1.innerText = arr[flag].slice(0, cloneNum)
+                    } else {
+                        flag++
+                        num = 0
+                        clearInterval(x)
+                        writeText()
+                    }
+                }
+            } else {
+                flag = 0
+            }
+        }, 70);
+    }
+
+    //writing text
+    //ham
+    let flah = 1
+    const ham = document.querySelector('.ham')
+    const menu = document.querySelector('#menu')
+    // const span = document.querySelector('span')
+    ham.addEventListener('click', function () {
+        menu.classList.toggle('show-menu')
+        const temp = this.children
+        //    console.log(temp);
+        if (flah % 2) {
+            temp[1].style.transform = 'translateX(-450px)'
+            temp[1].style.opacity = '0'
+            temp[0].style.transform = 'translateY(20px)rotate(51deg)'
+            temp[2].style.transform = 'translateY(10px)rotate(-49deg)'
+        } else {
+            temp[1].style.transform = 'translateX(0px)'
+            temp[1].style.opacity = '1'
+            temp[0].style.transform = 'rotate(0deg)'
+            temp[2].style.transform = 'rotate(0deg)'
+        }
+        flah++
+
+    })
+
+    //ham
+    //tab
+    const li = document.querySelectorAll('.tabs>ul>li')
+    const div = document.querySelectorAll('.tabs>.txt>div')
+
+    // set the first tab as active by default
+    li[2].style.background = 'white'
+    div[2].style.opacity = '1'
+    document.getElementsByClassName('txt')[0].style.height = div[0].getAttribute('data-h') + 'px'
+
+    li.forEach((value, index) => {
+        value.addEventListener('click', () => {
+            // reset li
+            li.forEach((item) => {
+                item.style.background = '#f6f6f6'
+            })
+
+            // set the current tab as active
+            value.style.background = 'white'
+
+            ////////////////////////////////////////////////////////////
+            // resset div
+            div.forEach((item) => {
+                item.style.opacity = '0'
+            })
+            // resset div
+
+            // show the corresponding div
+            div[index].style.opacity = '1'
+            document.getElementsByClassName('txt')[0].style.height = div[index].getAttribute('data-h') + 'px'
+        })
+    })
+
+    //tab
+    //second swiper
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+        },
+    });
+    //second swiper
+    //mouse
+    // let main = document.querySelector('main>.row>.fourthpage>.fourth5')
+    //     let c1 = document.querySelector('.c1')
+    //     let c2 = document.querySelector('.c2')
+    //     let rc = document.querySelector('.rc')
+    //     let xi = 0
+    //     let yi = 0
+    //     window.addEventListener('mousemove', ()=>{
+    //         xi = event.clientX;
+    //         yi = event.clientY;
+    //         c1.style.top=yi+'px'
+    //         c1.style.left=xi+'px'
+    //         c2.style.top=yi+'px'
+    //         c2.style.left=xi+'px'
+    //     })
+    //     main.addEventListener('mousedown', ()=>{
+    //         c1.style.width='30px'
+    //         c1.style.height='30px'
+    //         c2.style.width='15px'
+    //         c2.style.height='15px'
+    //         rc.style.display='none'
+    //     })
+    //     main.addEventListener('mouseup', ()=>{
+    //         c1.style.width='40px'
+    //         c1.style.height='40px'
+    //         c2.style.width='10px'
+    //         c2.style.height='10px'
+    //     })
+
+    //     window.addEventListener('contextmenu', (e)=>{
+    //         e.preventDefault()
+    //         rc.style.display='flex'
+    //         rc.style.top = yi+'px'
+    //         rc.style.left = x+'px'
+    //     })
+    //mouse
+    // scroll
+
+    const box = document.querySelectorAll('.box')
+    const mainHeight = document.querySelector('main').clientHeight
+    const span = document.querySelector('#span')
+    const lis = document.querySelectorAll('main>nav>.row>.menu>li');
+    // ...
+    let st = window.scrollY
+    let currentSectionIndex = 0;
+
+    // add event listeners to sections
+
+    box.forEach((val) => {
+        val.setAttribute('data-h', val.offsetTop)
+        val.classList.add(val.getAttribute('data-scrl'))
+    })
+
+    window.addEventListener('scroll', () => {
+
+        st = window.scrollY;
+        console.log(st);
+        box.forEach((val) => {
+            if (
+                (st + 300) > val.getAttribute('data-h')
+            ) {
+                val.classList.remove(val.getAttribute('data-scrl'))
+            }
+            if (st > 100) {
+                span.style.opacity = '1'
+            } else {
+                span.style.opacity = '0'
+            }
+        })
+        span.addEventListener('click', () => {
+            window.scrollTo(0, 0)
+        })
+   
+
+
+    })
+    const liElements = document.querySelectorAll('.menuu > ul > li');
+    liElements.forEach((li, index) => {
+        li.addEventListener('click', () => {
+            // Set the background and text color of the clicked li
+            liElements.forEach((li) => {
+                li.style.background = 'white';
+                li.style.color = 'black';
+            });
+            li.style.background = '#427ed1';
+            li.style.color = 'white';
+
+            // Smooth scroll to the corresponding section
+            const targetSectionId = `section-${index + 1}`;
+            const targetSection = document.getElementById(targetSectionId);
+            const offsetTop = targetSection.offsetTop;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+    const liElementss = document.querySelectorAll('.menuuu > ul > li');
+    liElementss.forEach((li, index) => {
+        li.addEventListener('click', () => {
+            // Set the background and text color of the clicked li
+            liElementss.forEach((li) => {
+                li.style.background = 'white';
+                li.style.color = 'black';
+            });
+            li.style.background = '#427ed1';
+            li.style.color = 'white';
+
+            // Smooth scroll to the corresponding section
+            const targetSectionIdd = `section-${index + 1}`;
+            const targetSectionn = document.getElementById(targetSectionIdd);
+            const offsetTop = targetSectionn.offsetTop;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+    // scroll
+
+    //   3rd swiper
+    var swiper3 = new Swiper(".swiper-3", {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    300: { // sm
+      slidesPerView: 2,
+    },
+    576: { // sm
+      slidesPerView: 3,
+    },
+    1200: { // xl
+      slidesPerView: 5,
+    },
+    1400: { // 2xl
+      slidesPerView: 5,
+    },
+    1600: { // 2xl
+      slidesPerView: 5,
+    },
+  },
+});
+   
+
+</script>
+
+</html>
