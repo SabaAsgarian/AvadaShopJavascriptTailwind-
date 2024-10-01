@@ -24,7 +24,7 @@ AvadaShopJavascriptTailwind-
 
 - Created - 2024-07-19
 
-- Technologies Used - Html , Css , Tailwind , JavaScript
+- Technologies Used - Html ,Css , Tailwind , JavaScript
 
 - Hooks Used : useState 
 
