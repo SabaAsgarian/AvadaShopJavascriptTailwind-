@@ -1,7 +1,7 @@
 # AvadaShopJavascriptTailwind-
 Avada Shop with Javascript & Tailwind
 
-
+ 
 
 
 
