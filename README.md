@@ -3,9 +3,6 @@ Avada Shop with Javascript & Tailwind
 
  
 
- 
-
-
 
 ![Capthfure](https://github.com/user-attachments/assets/68eb180e-f8e8-4615-9da0-006c57263a21)
 
